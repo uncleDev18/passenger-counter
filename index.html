@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passenger Counter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    
 </head>
 <body>
     <div class="container">
-        <h1>People Entered</h1>
+        <h1>People Entered:</h1>
         <h2 id="count-el">0</h2>
 
-        <button class="btnIncre">Increment</button>
-        <button class="btnSave">Save</button>
+        <button class="btn-Incre" onclick="increment()">INCREMENT</button>
+        <button class="btn-Decre" onclick="decrement()">DECREMENT</button>
+        <button class="btn-Save" onclick="save()">SAVE</button>
+
+        <h4 id="save-el">Saved : </h4>
     </div>
     
-    <script>
-        document.getElementById("count-el").innerText = 5
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
